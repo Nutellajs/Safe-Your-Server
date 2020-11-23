@@ -4,7 +4,7 @@ module.exports = {
     category: "config",
     cooldown: 5,
     description: "Set Logs Channel!",
-    aliases: ['disable', 'silence'],
+    aliases: ['disable', 'anti-ad'],
     usage: "SetLogs <Mention Channel>",
 	execute(message, args, client) {
 
