@@ -77,4 +77,36 @@ client.on('message', message => {
     .setDescription('There was an error! Please retry to command, and check if I got permissions!')
     .setColor(config.emojis.error)
     .setFooter(config.embeds.footer + "- Made by Nutella; Github: https://github.com/EmptyBotDev/Safe-Your-Server")
+    
     */
+
+   const IsInvite = async(guild, code) => {
+    return await new Promise((resolve) => {
+      guild.fetchInvites().then((invites) => {
+        for(const invite of invites){
+          if(code === invite[0]){
+            resolve(true)
+            return;
+          }
+        }
+        resolve(false)
+      })
+    })
+  
+  }
+  client.on('message', async(message) => {
+    const { guild, member, content } = message
+  
+    const db = require('quick.db')
+    let l = db.get(`Anti-Ad`)
+    if(l === true){
+    if(content.includes('discord.gg/')){
+      if(message.member.hasPermission('MANAGE_MESSAGES')) return;
+      const code = content.split('discord.gg/')[1]
+      const isOurInvite = await IsInvite(guild, code)
+      if(!isOurInvite){
+        message.delete()
+        message.reply("Don't send invites here of other servers!")
+      }}
+    }
+  })
