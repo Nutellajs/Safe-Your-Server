@@ -10,14 +10,15 @@ Safe your server, is a bot against raids, spam and invites! It can be used for m
 
 > Moderation, Anti Spam, Anti Invites.
 ------
+
+**These commands, are with the prefix `!`, if you change the prefix to `+`, it would be `+ban`**
 ### 🔑 Admin commands
 
 ```
 !ban                 Bans a member, thats given.
 !kick                Kicks a member, thats given.
 !warn                Warns a member, thats given.
-!enable anti-ad      Enables an option, that stop users that don't have any permissions to send invites.      
-!disable anti-ad     Disables an option, that stops users that don't have any permissions to send invites.
+!anti-ad             Enables an option, that stop users that don't have any permissions to send invites.      
 ```
 ### 👤 User commands
 ```
