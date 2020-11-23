@@ -1,10 +1,10 @@
 const db = require('quick.db'), discord = require('discord.js'), config = require('./../config')
 module.exports = {
-    name: "enable",
+    name: "anti-ad",
     category: "config",
     cooldown: 5,
     description: "Set Logs Channel!",
-    aliases: ['disable', 'anti-ad'],
+    aliases: ['disable', 'enable'],
     usage: "SetLogs <Mention Channel>",
 	execute(message, args, client) {
 
