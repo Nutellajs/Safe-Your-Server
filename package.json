@@ -19,6 +19,7 @@
   "homepage": "https://github.com/EmptyBotDev/Safe-Your-Server#readme",
   "dependencies": {
     "discord.js": "^12.5.0",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "quick.db": "^7.1.3"
   }
 }

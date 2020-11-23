@@ -22,7 +22,7 @@ module.exports = {
         \`${p}meme\`, \`${p}whois <user>\`, \`${p}say {text}\`, \`${p}dog\`.
         
         **Administration**:
-        \`${p}warn {user} {reason}\`, \`${p}warnings <user>\`, \`${p}delwarn {user} {warn-id}\`
+        \`${p}warn {user} {reason}\`, \`${p}warnings <user>\`
         `)
         .setFooter(config.embeds.footer + " - Made by Nutella#0008; Github: https://github.com/EmptyBotDev/Safe-Your-Server")
         .setThumbnail(message.author.displayAvatarURL({dynamic: true}))
